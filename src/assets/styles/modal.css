@@ -1,0 +1,74 @@
+/******************************************************************************************************************
+ **************************************************** MODAL ****************************************************
+ ******************************************************************************************************************/
+
+ .dialog {
+ 	display: none;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	height: 100%;
+ 	width: 100%;
+ 	overflow: auto;
+ 	background-color: rgba(0,0,0,.7);
+ 	z-index: 1049;
+ }
+
+ #authDialog {
+ 	display: block
+ }
+
+ .dialog-content {
+ 	position: absolute;
+ 	top: 15%;
+ 	left: 0;
+ 	right: 0;
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 50%;
+ 	padding: 10px;
+ 	color: #888;
+ 	background-color: #FFF;
+ 	z-index: 1050;
+ }
+
+ .dialog-header {
+ 	text-align: center;
+ 	margin-bottom: 20px;
+ 	cursor: pointer;
+ 	border-bottom: 1px solid #eee;
+ }
+
+ .dialog-body {
+ 	color: #000;
+ 	text-align: center;
+ }
+
+ .dialog-body h5{
+ 	color: #888;
+ 	text-align: left;
+ }
+
+ .dialog-body .fa {
+ 	color: #27AE60;
+ }
+
+ .dialog.open-modal .dialog-content{
+ 	animation: openModal .5s;
+ 	animation-fill-mode: both;
+ }
+
+ @keyframes openModal {
+ 	from {
+ 		opacity: 0;
+ 		transform: scale(0);
+ 	}
+ 	to {
+ 		opacity: 1;
+ 		display: block;
+ 		transform: scale(1);
+ 	}
+ }

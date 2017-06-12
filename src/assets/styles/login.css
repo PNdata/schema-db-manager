@@ -1,0 +1,55 @@
+/******************************************************************************************************************
+ ***************************************************** LOGIN ****************************************************
+ ******************************************************************************************************************/
+
+ .login {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	width: 100%;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ }
+
+ .login > .login-container {
+ 	display: block;
+ 	padding: 32px 48px;
+ 	width: 400px;
+ 	max-width: 100%;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
+
+ #loginForm .input-label {
+ 	font-size: 14px;
+ 	color: #0FA2CB;
+ 	left: inherit;
+ 	right: 0.75rem;
+ }
+
+ #loginForm input[type=text] {
+ 	margin-bottom: 40px;
+ }
+
+ #loginForm input[type=text],
+ #loginForm input[type=password] {
+ 	color: #FFF;
+ 	font-size: 20px;
+ 	border-bottom: 2px solid #FFF;
+ }
+
+ #loginForm input[type=text]:focus:not([readonly]),
+ #loginForm input[type=password]:focus:not([readonly]) {
+ 	outline: 0;
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ 	border-bottom: 2px solid #0FA2CB;
+ }
+
+ .login > .login-container > #loginForm .btn {
+ 	color: white;
+ 	background-color: #0FA2CB;
+ }

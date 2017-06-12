@@ -1,0 +1,61 @@
+/******************************************************************************************************************
+ **************************************************** FORMS ****************************************************
+ ******************************************************************************************************************/
+
+ .form-container {
+ 	overflow-x: hidden;
+ }
+
+ .form-container label {
+ 	color: #2c3e50;
+ }
+
+ .form-container form {
+ 	padding-top: 20px;
+ 	background-color: rgba(234, 234, 234, 0.9);
+ 	animation: slideToBottom .5s linear;
+ }
+
+ .form-group,
+ .form-group.row {
+ 	margin-bottom: 20px;
+ 	padding-bottom: 0;
+ }
+
+ label {
+ 	font-size: inherit;
+ }
+
+ input:not([type]),
+ select.form-control{
+ 	padding: 15px 0;
+ 	font-size: 14px;
+ 	color: #2c3e50;
+ 	margin: 0;
+ 	border-radius: 0;
+ 	box-sizing: border-box;
+ 	border: none;
+ 	box-shadow: none;
+ 	border-bottom: 2px solid #FFF;
+ 	background-color: transparent;
+ 	-webkit-transition: border-color ease-in-out .15s;
+ 	-o-transition: border-color ease-in-out .15s;
+ 	transition: border-color ease-in-out .15s;
+ }
+
+ input:not([type]):focus:not([readonly]),
+ select.form-control:focus {
+ 	outline: 0;
+ 	box-shadow: none;
+ 	border-bottom: 2px solid #0FA2CB;
+ }
+
+ select.form-control {
+ 	padding: 0;
+ }
+
+ [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+ 	position: inherit;
+ 	left: inherit;
+ 	opacity: 1;
+ }

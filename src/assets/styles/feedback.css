@@ -1,0 +1,57 @@
+/******************************************************************************************************************
+ ************************************************** FEEDBACK **************************************************
+ ******************************************************************************************************************/
+
+.feedback {
+	color: #FFF;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding: 6px 12px;
+	font-size: 20px;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+}
+
+.feedback-error{
+	background-color: #96281B;
+	-webkit-animation: feedbackShow 1s;
+	-moz-animation: feedbackShow 1s;
+	-o-animation: feedbackShow 1s;
+	animation: feedbackShow 1s;
+}
+
+.feedback-success{
+	background-color: #50B28A;
+	-webkit-animation: feedbackShow 1s;
+	-moz-animation: feedbackShow 1s;
+	-o-animation: feedbackShow 1s;
+	animation: feedbackShow 1s;
+}
+
+@keyframes feedbackShow {
+	from {
+		transform: scale(.1) translateY(0);
+	}
+	15% {
+		transform: translateY(-10px);
+	}
+	30% {
+		transform: translateY(10px);
+	}
+	45% {
+		transform: translateY(-5px);
+	}
+	60% {
+		transform: translateY(5px);
+	}
+	75% {
+		transform: translateY(-2px);
+	}
+	to {
+		transform: scale(1) translateY(0);
+	}
+}
