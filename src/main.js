@@ -10,27 +10,27 @@ import store 		from './utils/store'
 
 Vue.use(Router)
 
-var api = new Api();
+let api = new Api();
 
 api.get().then(response=>{
 
 	store.schemas 	= response;
 	/* eslint-disable no-new */
-	new Vue({
+	let app = new Vue({
 		el: '#app',
 		template: '<App/>',
 		components: { App },
 		router: new Router({ routes })
 	})
-
+	app.$router.push({ name : 'list'})
 }).catch(error=> {
-	new Vue({
+	let apperror = new Vue({
 		el: '#app',
 		template: '<Error/>',
 		components: { Error },
 		router: new Router({ routes })
 	})
-	new Router({routes}).push({ name : 'error', params: {'type': 400} })
+	apperror.$router.push({ name : 'error', params: {'type': 400} })
 	document.body.innerHTML += (error.response) ? error.response.data : '';
 	document.body.style.backgroundImage = 'none';
 	document.body.style.padding = '0';
